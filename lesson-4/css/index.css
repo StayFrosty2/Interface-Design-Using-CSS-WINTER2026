@@ -88,5 +88,5 @@ main > section,
 main > aside,
 footer {
 	/* STEP 9: add some padding to the main layout containers to give the text some room to breathe - then head over to flexbox.html to see how to do this an easier way */
-	
+	padding: 5px;
 }
