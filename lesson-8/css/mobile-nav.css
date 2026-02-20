@@ -52,7 +52,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	/* STEP 19d: Set the z-index to 50 to set the header (and the containing navigation panel) to be on top of the footer at the bottom of the viewport */
-	
+	z-index: 50;
 }
 /* Link styling for the page-level header */
 header h1 {
@@ -80,18 +80,23 @@ header nav{
 }
 main {
 	/* STEP 18a: The content of the page is a bit hard to read - let's add a top margin to the MAIN element, center it, and some padding */
-	
+	margin: 100px auto;
+	padding: 20px;
 	/* STEP 18b: We don't want the measure of the lines of body text to get too long - let's set a max-width on the MAIN element */
-	
+	min-width: 420px;
+	max-width: 768px;
 }
 footer {
 	background-color: var(--primary-color);
 	color: var(--text-and-icons);
 	/* STEP 19a: Let's fix the footer - attach it to the bottom of the viewport, add some padding, and set the width to 100% */
-	
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px 20px;
 	font-size: 0.75rem;
 	/* STEP 19b: When the navigation panel is visible, the FOOTER shouldn't appear on top of it - set the z-index so the FOOTER is underneath the panel */
-	
+	/* z-index: 50; */
 	/* STEP 19c: Notice this doesn't work - this is due to a vertical stacking order context (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context). We need to elevate the z-index of the HEADER element above to address this */
 }
 
@@ -173,17 +178,17 @@ label[for="toggle-menu"] {
 	/* Hide the hamburger menu checkbox label (checkbox is already hidden) */
 	label[for="toggle-menu"] {
 			/* STEP 20: For large screens, we don't need the hamburger or the close menu icon/button */
-			
+			display: none;
 	}
 	header nav ul {
 			/* STEP 21a: Restore the navigation so that it is back in the regular flow of the page */
-			
+			position: static;
 			/* STEP 21b: We don't need the grey background, anymore */
-			
+			background-color: transparent;
 	}
 	header nav li {
 			/* STEP 22: Set the LI elements to render horizontally instead of vertically */
-			
+			display: inline-block;
 	}
 	header a:hover {
 			color: var(--light-primary-color);
