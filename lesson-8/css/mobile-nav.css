@@ -13,7 +13,7 @@
 	--primary-color: #3F51B5;
 	--text-and-icons: #FFFFFF;
 	--accent-color: #9E9E9E;
-	--primary-text: #212121;
+	--primary-text: #636262;
 	--secondary-text: #757575;
 	--divider-color: #BDBDBD; 
 }
@@ -40,7 +40,7 @@ img {
 }
 /* STEP 5: Put diagnostic borders around HEADER, HEADER H1, and HEADER NAV */
 header {
-	outline: red 2px solid;
+	/* outline: 3px dashed red; */
 	background: var(--primary-color);
 	/* STEP 6a: Attach the HEADER to the top left of the viewport (fixed) */
 	position: fixed;
@@ -56,7 +56,7 @@ header {
 }
 /* Link styling for the page-level header */
 header h1 {
-	outline: red 2px solid;
+	/* outline: 3px dashed orange; */
 	color: var(--text-and-icons);
 	margin: 20px;
 }
@@ -76,7 +76,7 @@ header a:active {
 	color: var(--primary-text);
 }
 header nav{
-	outline: red 2px solid;
+	/* outline: 3px dashed lime; */
 }
 main {
 	/* STEP 18a: The content of the page is a bit hard to read - let's add a top margin to the MAIN element, center it, and some padding */
@@ -118,7 +118,7 @@ header nav ul {
 	/* STEP 13a: Set the z-index to 100 so that we can control the stacking order with respect to the menu buttons that are now hidden from view */
 	z-index: 100;
 	/* STEP 13c: Set the opacity of the navigation panel to 50% so that we can see the interaction with the checkbox underneath */
-	/* opacity: 50%; */
+	/* opacity: 75%; */
 	/* STEP 16: Remove the opacity declaration above - we no longer need it */
 	/* STEP 17: Let's make this really cool and animate the navigation panel so that it slides out to the left by transitioning any change to the left: property value */
 	transition: left 0.1s;
