@@ -17,4 +17,16 @@ html {
 	margin: 0 auto;
 }
 
+.tabs {
+	border: 5px black solid;
+}
 
+[role="tablist"] li {
+	display: inline;
+	text-decoration: none;
+	margin: 0 0.5em;
+}
+
+[role="tablist"] li {
+	color: orange;
+}
