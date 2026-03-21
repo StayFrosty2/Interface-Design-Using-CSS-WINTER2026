@@ -17,47 +17,42 @@ html {
 	margin: 0 auto;
 }
 
-/* .tabs {
-	border: 5px black solid;
-} */
-
+/* Move the ul down slightly to align tabs with panel */
 ul {
 	position: relative;
 	top: 7px;
 }
 
+/* General styling for the list items */
 [role="tablist"] li {
 	display: inline;
 	text-decoration: none;
 	margin: 2em 0.1em 2em 0;
 	padding: 0.5em;
-	/* position: relative;
-	top: 7px; */
 	background-color: lightgray;
 	border-radius: 3px 3px 0 0;
 }
 
+/* Styles only the active tab */
 [role="tablist"] li.active {
 	background-color: white;
 	border: 5px black solid;
 	border-bottom: 5px white solid;
 }
 
-/* [role="tablist"] li:visited {
-	color: black;
-	text-decoration: none;
-} */
-
+/* General styling for the panel*/
 [role="tabpanel"] {
 	display: none;
 	border: 5px black solid;
 	padding: 10px;
 }
 
+/* Makes it so only the panel associated with the tab shows */
 [role="tabpanel"].show {
 	display: block;
 }
 
+/* Removes the default effects for the anchors so they aren't purple and underlined */
 li a {
 	color: black;
 	text-decoration: none;
