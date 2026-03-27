@@ -19,17 +19,20 @@
             <h2 class="mb-3">Standard Form Controls</h2>
             <form action="" method="" id="">
                 <!-- STEP 8: Construct a text INPUT for full name with appropriate classes -->
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Full Name Here" class="form-control" />
+                <div class="mb-2">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name Here" class="form-control" />
+                </div>
                 <!-- STEP 9: Build out a new row containing 2 columns -->
-                <div>
+                <div class="row mb-3">
                     <!-- STEP 10: Build an Input for email with LABEL (and a note) -->
-                    <div>
+                    <div class="col-sm-12 col-md-6">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" id="email" name="email" class="form-control">
+                        <div class="form-text">We will never share your email</div>
                     </div>
                     <!-- STEP 11: Build an INPUT for password with LABEL -->
-                    <div>
+                    <div class="col-sm-12 col-md-6">
                         <label for="password" class="form-label">Password</label>
                         <input type="text" id="password" name="password" class="form-control">
                     </div>
@@ -85,10 +88,13 @@
                 </div>
                 <!-- STEP 20: Craft a file upload widget -->
                 <div class="mb-4">
-                    
+                    <label for="formFile" class="form-label">Upload Profile Picture</label>
+                    <input class="form-control" type="file" id="formFile">
                 </div>
                 <!-- STEP 21: Complete the form with a submit BUTTON element -->
-                
+                <div class="mb-3 btn-group">
+
+                </div>
             </form>
         </div>
     </div>
