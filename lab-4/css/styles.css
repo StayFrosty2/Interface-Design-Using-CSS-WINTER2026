@@ -8,10 +8,25 @@ table {
     border-collapse: collapse;
     border-left: none;
     border-right: none;
+    caption-side: top;
+    table-layout: auto;
+    width: 100%;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 20px;
 }
 
 tr, th {
-    padding: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+.team {
+    text-align: left;
 }
 
 tbody tr:nth-child(odd) {
