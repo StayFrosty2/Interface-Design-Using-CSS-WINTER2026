@@ -36,6 +36,14 @@ tr, th {
     color: red;
 }
 
+.sort-up, .sort-down {
+    background-color: lightcyan;
+}
+
+th:nth-of-type(1).sort-down {
+    background-color: white;
+}
+
 tbody tr:nth-child(odd) {
     background-color: rgb(0, 0, 0, 0.05);
 }
