@@ -18,16 +18,22 @@ header {
 }
 /* STEP 7: Make links look better */
 header nav a {
-
+	text-decoration: none;
 }
 /* STEP 10: Style hamburger menu button */
 #menu-icon {
 
 }
 header nav ul {
-	/* STEP 9: Hide the horizontal navigation list for small screens */
-
 	/* STEP 8: Style the navigation menu such that it is now a box that sits just under the hamburger menu button */
+	list-style-type: none;
+	position: absolute;
+	top: 4rem;
+	left: 0;
+	background-color: white;
+	border: 0.5rem solid black;
+	
+	/* STEP 9: Hide the horizontal navigation list for small screens */
 
 }
 /* STEP 12: Ensure links are full-width and easy to touch */
@@ -68,7 +74,7 @@ footer {
 	}
 }
 /* STEP 4b: Add another media query breakpoint for even bigger screens (4-column layout) */
-@media only screen and () {
+@media screen and ((min-width: 768px) or (orientation: landscape)) {
 	/* STEP 13a: Rearrange the navigation so that we don't use the hamburger */
 	#menu-icon {
 
@@ -87,10 +93,10 @@ footer {
 	}
 	/* STEP 4c: Use flexbox to create the 4-column layout */
 	main {
-
+		flex-wrap: nowrap;
 	}
 	main section {
-
+		flex-basis: 25%;
 	}
 }
 /* STEP 4d: Try to capture orientation landscape as well using OR with the 2-column layout breakpoint (use a comma) in STEP 4a */
